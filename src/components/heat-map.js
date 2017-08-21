@@ -20,7 +20,7 @@ class HeatMap extends Component {
       const height = 600;
       const margin = {top: 100, right: 10, bottom: 70, left: 100};
       const data = this.props.data.monthlyVariance;
-      const months = ["January", "February", "march", "April", "May", "Jun", "July", "August", "September", "October", "November", "December"];
+      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       const rectWidth = 5;
       const rectHeight = (height - margin.top - margin.bottom) / 12;
       const colorScale = this.props.colorScale;
@@ -84,7 +84,7 @@ class HeatMap extends Component {
         .attr('y', -70)
         .attr('fill', 'black')
         .attr('text-anchor', 'middle')
-        .html('Month');
+        .html('Months');
 
       // Title
       svg.append('text')
