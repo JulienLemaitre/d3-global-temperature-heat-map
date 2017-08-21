@@ -31,7 +31,7 @@ class App extends Component {
         const d3data = data.monthlyVariance;
         const maxTemp = d3.max(d3data, d => d.variance);
         const minTemp = d3.min(d3data, d => d.variance);
-        const baseTemperature = data.baseTemperature;
+        // const baseTemperature = data.baseTemperature;
         // const warmVariance = maxTemp - baseTemperature;
         // const coldVariance = baseTemperature - minTemp;
         // const maxVariance = warmVariance > coldVariance ? warmVariance : coldVariance;

@@ -149,6 +149,7 @@ class HeatMap extends Component {
       let myLegend = legend.legendColor()
         .shapeWidth(30)
         .cells(9)
+        .labelFormat(d3.format("+.01f"))
         .orient('horizontal')
         .scale(linear);
 
